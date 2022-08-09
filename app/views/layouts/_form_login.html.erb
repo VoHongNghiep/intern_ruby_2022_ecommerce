@@ -1,0 +1,7 @@
+<%= form_for :user  do |f| %>
+  <%= f.label :name, t("static_pages.name") %>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :email, t("static_pages.email") %>
+  <%= f.email_field :email, class: "form-control mb-6" %>
+  <%= f.submit t("static_pages.sign_in"), class: "btn btn-primary mt-3" %>
+<% end %>

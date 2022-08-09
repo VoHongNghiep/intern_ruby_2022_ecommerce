@@ -1,0 +1,18 @@
+vi:
+  static_pages:
+    home: "Trang chủ"
+    sign_in: "Đăng nhập"
+    sign_up: "Đăng ký"
+    share: "Chia sẻ đến"
+    about: "Giới thiệu"
+    contact: "Liên hệ"
+    men_wear: "Thời trang nam"
+    women_wear: "Thời trang nữ"
+    shop_now: "Mua ngay"
+    slider_msg_1: "<h3>Lần giảm giá <span>lớn nhất</span></h3><p>Duy nhất trong hôm nay</p>"
+    slider_msg_2: "<h3>Bộ sưu tập <span>mùa hè</span></h3><p>Giảm giá hàng mới về</p>"
+    name: "Tên"
+    email: "Email"
+    password: "Mật khẩu"
+    confirmation: "Xác nhận lại mật khẩu"
+    dont_have_acount: "Bạn chưa có tài khoản ?"
