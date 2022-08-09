@@ -87,5 +87,3 @@ config/environments/*.local.yml
 /storage/*
 /config/application.yml
 /public/assets/*
-
-/app/assets/images

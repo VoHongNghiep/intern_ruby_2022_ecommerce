@@ -4,5 +4,5 @@ class Product < ApplicationRecord
   has_many :ratings, dependent: :destroy
   has_many :order_details, dependent: :destroy
 
-  validate :name, :price, :quantity_in_stock, presence: true
+  validates :name, :price, :quantity_in_stock, presence: true
 end
