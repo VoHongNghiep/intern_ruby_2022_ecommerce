@@ -1,4 +1,5 @@
 class Order < ApplicationRecord
+  acts_as_paranoid
   enum status: {Pending: 0, Shipping: 1, Delivered: 2, Canceled: 3,
                 Rejected: 4}
 

@@ -50,6 +50,16 @@ vi:
     name: "Tên"
     comment: "Bình luận"
     rating: "Đánh giá"
+    price: "Giá"
+    quantity: "Số lượng"
+    total: "Tổng tiền"
+    delete_success: "Xóa thành công"
+    delete_fail: "Xoá thất bại"
+    confirm_msg: "Bạn chắc chắn muốn thao tác ?"
+    order_id: "Mã đơn hàng"
+    amount: "Tổng cộng"
+    status: "Trạng thái"
+    action: "Hoạt động"
   admin:
     static_pages:
       settings: "Cài đặt"

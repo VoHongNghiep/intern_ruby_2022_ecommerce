@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Danh sách sản phẩm của #Order <%= @order_id %></h2>
+  <br>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col"><%= t "static_pages.name" %></th>
+        <th scope="col"><%= t "static_pages.price" %></th>
+        <th scope="col"><%= t "static_pages.quantity" %></th>
+      </tr>
+    </thead>
+    <% @ods.each do |od| %>
+      <tbody>
+        <tr>
+          <td><%= od.product.name %></th>
+          <td><%= od.price %></td>
+          <td><%= od.quantity %></td>
+        </tr>
+      </tbody>
+    <% end %>
+    <tbody>
+      <tr>
+        <th scope="row"><%= t "static_pages.total" %></th>
+        <th><%= number_to_currency @order_total.amount, negative_format: "(%u%n)"%></td>
+      </tr>
+  </table>
+</div>

@@ -50,6 +50,16 @@ en:
     name: "Name"
     comment: "Comment"
     rating: "Rating"
+    price: "Price"
+    quantity: "Quantity"
+    total: "Total"
+    delete_success: "Delete success"
+    delete_fail: "Delete failed!"
+    confirm_msg: "Are you sure ?"
+    order_id: "Order id"
+    amount: "Amount"
+    status: "Status"
+    action: "Action"
   admin:
     static_pages:
       settings: "Settings"
