@@ -1,0 +1,17 @@
+<% if logged_in? && rating? %>
+  <%= form_for build_rating, url: ratings_path do |f| %>
+    <%= f.label t "static_pages.review" %>
+    <span class="rating">
+      <% for i in Settings.rate %>
+        <i class="fa fa-star" data-star="<%= i %>"></i> 
+      <% end %>
+      <%= f.hidden_field :star, value: 0 , id:"rating"%>
+    </span>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :product_id, value: @product.id %>
+    <div class="form-group" >
+      <%= f.text_field :comment, class: "form-control content-form", placeholder: t("static_pages.comment") %>
+      <%= f.submit t("static_pages.submit"), class: "btn btn-primary btn_custom" %>
+    </div>
+  <% end %>
+<% end %>

@@ -9,9 +9,13 @@
       </div>
     </div>
     <div class="item-info-product">
-      <h4><a href="single.html"><%= product.name %></a></h4>
+      <h4>
+        <%= link_to product.name, product_path(product.id) %>
+      </h4>
       <div class="info-product-price">
-        <span class="item_price"><%= number_to_currency(product.price, negative_format: "(%u%n)") %></span>
+        <span class="item_price">
+          <%= number_to_currency(product.price, negative_format: "(%u%n)") %>
+        </span>
       </div>
       <div
         class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2"

@@ -14,3 +14,4 @@ user:
   adress_min: 6
   pass_min: 6
   valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+rate: [1,2,3,4,5]

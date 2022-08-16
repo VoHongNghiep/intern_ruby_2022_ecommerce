@@ -8,4 +8,6 @@ class Rating < ApplicationRecord
 
   validates :comment, presence: true,
             length: {maximum: Settings.message.message_max}
+
+  RATING_PARAMS = %i(comment star user_id product_id).freeze
 end

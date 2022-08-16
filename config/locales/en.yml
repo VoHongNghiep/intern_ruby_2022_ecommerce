@@ -34,6 +34,14 @@ en:
     category_not_found: "Category not found"
     enter_form: "Enter name of product ... "
     search_result: "Result"
+    check_payment: "Check delivery, payment options and charges at your location"
+    qty: "Quantity"
+    add_to_cart: "Add to cart"
+    review: "Review"
+    comment: "Comment"
+    submit: "Gửi"
+    rating_success: "Rating success"
+    rating_fail: "Rating Fail"
   admin:
     static_pages:
       settings: "Settings"
