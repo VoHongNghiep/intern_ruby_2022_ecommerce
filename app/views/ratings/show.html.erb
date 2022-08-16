@@ -1,0 +1,56 @@
+<div class="container">
+  <h2>Đánh giá sản phẩm</h2>
+  <div class="col-md-4 single-right-left">
+    <div class="grid images_3_of_2">
+      <div class="flexslider">
+        <ul class="slides">
+          <li data-thumb="<%= @product.images.first&.image %>">
+            <div class="thumb-image">
+              <%= image_tag @product.images.first&.image %>
+            </div>
+          </li>
+          <li data-thumb="<%= @product.images.first&.image %>">
+            <div class="thumb-image">
+              <%= image_tag @product.images.first&.image %>
+            </div>
+          </li>
+          <li data-thumb="<%= @product.images.first&.image %>">
+            <div class="thumb-image">
+              <%= image_tag @product.images.first&.image %>
+            </div>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8 single-right-left simpleCart_shelfItem">
+    <h3><%= @product.name %></h3>
+    <p><%= number_to_currency(@product.price, negative_format: "(%u%n)") %></p>      
+    <div>
+      <% if logged_in? && rating? %>
+        <%= form_for build_rating, url: ratings_path do |f| %>
+          <%= f.label t "static_pages.review" %>
+          <span class="rating">
+            <% for i in Settings.rate %>
+              <i class="fa fa-star" data-star="<%= i %>"></i> 
+            <% end %>
+            <%= f.hidden_field :star, value: 0 , id:"rating"%>
+          </span>
+          <%= f.hidden_field :user_id, value: current_user.id %>
+          <%= f.hidden_field :product_id, value: @product.id %>
+          <div class="form-group" >
+            <%= f.text_field :comment, class: "form-control content-form", placeholder: t("static_pages.comment") %>
+            <%= f.submit t("static_pages.submit"), class: "btn btn-primary btn_custom" %>
+          </div>
+        <% end %>
+      <% else %>
+        <h3>Sản phẩm đã được đánh giá : 
+          <% (1..@product.ratings[0].star).each do |i| %>
+            <i class="fa fa-star" data-star="<%= i %>"></i> 
+          <% end %>
+        </h3>
+      <% end %>
+    </div>
+  </div>
+</div>

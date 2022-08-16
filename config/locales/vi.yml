@@ -42,6 +42,11 @@ vi:
     submit: "Gửi"
     rating_success: "Đánh giá thành công"
     rating_fail: "Đánh giá thất bại"
+    pending: "Đang xử lý"
+    shipping: "Đang giao"
+    delivered: "Đã giao hàng"
+    rejected: "Từ chối"
+    canceled: "Đã hủy"
   admin:
     static_pages:
       settings: "Cài đặt"

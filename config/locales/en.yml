@@ -42,6 +42,11 @@ en:
     submit: "Gửi"
     rating_success: "Rating success"
     rating_fail: "Rating Fail"
+    pending: "Pending"
+    shipping: "Shipping"
+    delivered: "Delivered"
+    rejected: "Rejected"
+    canceled: "Cancel"
   admin:
     static_pages:
       settings: "Settings"

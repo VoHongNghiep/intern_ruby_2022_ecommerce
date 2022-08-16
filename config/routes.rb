@@ -16,10 +16,16 @@ Rails.application.routes.draw do
     end
     resources :users
     resources :ratings
+    resources :order_details
     resources :categories, only: :show
     resources :products do
       collection do
         get :result
+      end
+    end
+    resources :orders do
+      member do
+        get :change
       end
     end
   end

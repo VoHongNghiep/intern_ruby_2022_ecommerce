@@ -1,0 +1,12 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#Order id</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+<%= render @orders %>
+</table>
+<%== pagy_bootstrap_nav(@pagy) %>

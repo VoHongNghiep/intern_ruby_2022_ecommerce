@@ -78,3 +78,15 @@ div.actions {
 label {
   display: block;
 }
+tr > th,td {
+  text-align: center;
+}
+.detail-order :hover {
+  color: red;
+  background-color: white;
+}
+
+.fa-trash :hover {
+  color: red;
+}
+

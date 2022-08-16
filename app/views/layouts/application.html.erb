@@ -10,10 +10,10 @@
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
   <body>
+    <%= render "layouts/header" %>
     <% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %> alert_mess"><%= message %></div>
     <% end %>
-    <%= render "layouts/header" %>
     <div class="translate">
       <%= link_to "English", locale: :en %>
       <%= link_to "Vietnamese", locale: :vi %>
