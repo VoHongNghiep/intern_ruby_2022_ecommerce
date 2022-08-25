@@ -60,6 +60,10 @@ vi:
     amount: "Tổng cộng"
     status: "Trạng thái"
     action: "Hoạt động"
+    select: "Lựa chọn"
+    newest: "Mới nhất"
+    price_increase: "Giá tăng dần"
+    price_decrease: "Giá giảm dần"
   admin:
     static_pages:
       settings: "Cài đặt"

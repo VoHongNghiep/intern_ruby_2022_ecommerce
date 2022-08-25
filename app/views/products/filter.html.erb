@@ -9,7 +9,8 @@
                 <%= select_tag :filter , options_for_select([
                           t("static_pages.select") ,
                           t("static_pages.newest") ,
-                          t("static_pages.price_increase") ]), class: "form-select form-select" %>
+                          t("static_pages.price_increase") ,
+                          t("static_pages.price_decrease") ]), class: "form-select form-select" %>
               </div>
               <div class="third-third">
                 <%= submit_tag "Submit", class: "btn btn-primary" %>
